@@ -1,0 +1,28 @@
+{
+  "name": "NodeForBallSir",
+  "version": "0.0.1",
+  "main": "ballSirSay",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "caiyidong",
+  "contributors": [
+    "iceyang"
+  ],
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "restify": "",
+    "winston": "~0.7.3",
+    "mongodb": "",
+    "mongojs":"",
+    "async": "",
+    "md5": "",
+    "base64": "",
+    "crypto": "",
+    "request": "",
+    "generic-pool": "",
+    "ftp": "",
+    "node-imagemagick":""
+  }
+}
+
