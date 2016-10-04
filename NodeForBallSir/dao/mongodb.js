@@ -41,20 +41,20 @@ module.exports = {
     _create = function(callback) {
       return async.waterfall([
         function(cb) {
-          return cb(null, ['127.0.0.1']);
-          // if (process.env['NODE_ENV'] === 'production') {
-          //   return dns.resolve4(domain, cb);
-          // } else {
-          //   // return cb(null, ['192.168.1.219']);
-          //   return cb(null, ['127.0.0.1']);
-          // }
+          
+          if (process.env['NODE_ENV'] === 'production') {
+            return dns.resolve4(domain, cb);
+          } else {
+            // return cb(null, ['192.168.1.219']);
+            return cb(null, ['127.0.0.1']);
+          }
         }, function(addresses, cb) {
           var connectionUrl;
           connectionUrl = _getConnectionUrl(dbName, user, pwd, port, addresses);
           console.log("******mongoURL******");
           console.log(connectionUrl);
           console.log("********************");
-          return MongoClient.connect("mongodb://127.0.0.1:27017/ballsir", connectionOption, cb);
+          return MongoClient.connect(connectionUrl, connectionOption, cb);
         }
       ], (function(_this) {
         return function(err, database) {

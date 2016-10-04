@@ -12,7 +12,7 @@ if (process.argv[3] != null) {
 
 console.log(process.env['NODE_ENV']);
 
-mongodb.init(config['development'], function(err, result) {
+mongodb.init(config[process.env['NODE_ENV']], function(err, result) {
 if (err) {
   process.exit(1);
 }

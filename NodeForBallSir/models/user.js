@@ -9,7 +9,7 @@ module.exports = {
 	          log.logError("数据库操作错误：" + err);
 	        }
 	        return callback(err, result);
-      });
+        });
 	},
 	remove: function(userid, callback){
 		;
