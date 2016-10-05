@@ -22,7 +22,8 @@
     "request": "",
     "generic-pool": "",
     "ftp": "",
-    "node-imagemagick":""
+    "node-imagemagick":"",
+    "util": ""
   }
 }
 

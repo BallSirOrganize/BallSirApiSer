@@ -12,11 +12,13 @@ module.exports = {
       });
     },
     register: function(req, res, next){
-
     	return _successMessage(res, next, "good");
     },
     findUser: function(req, res, next){
     	return _successMessage(res, next, "good");
+    },
+    userAsk: function(req, res, next){
+      return _successMessage(res, next, "I am listening");
     }
     
 }

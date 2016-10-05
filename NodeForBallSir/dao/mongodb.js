@@ -3,23 +3,14 @@ var MongoClient, ReadPreference, async, dbName, dns, mongoLogger, mongodb, repli
   __hasProp = {}.hasOwnProperty;
 
 dns = require('../utils/dns');
-
 util = require('util');
-
 async = require('async');
-
 mongodb = require('mongodb');
-
 MongoClient = require('mongodb').MongoClient;
-
 ReadPreference = require('mongodb').ReadPreference;
-
 dbName = '';
-
 _database = null;
-
 _create = null;
-
 replicaset = '';
 
 secondaryPreferred = {

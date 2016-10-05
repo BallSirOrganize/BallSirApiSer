@@ -12,3 +12,39 @@ mongodb://127.0.0.1:27017/ballsir
 ********************
 myapp listening at http://0.0.0.0:8080
 successfully connect mongodb
+development
+mongodb://127.0.0.1:27017/ballsir
+******mongoURL******
+mongodb://127.0.0.1:27017/ballsir
+********************
+myapp listening at http://0.0.0.0:8080
+successfully connect mongodb
+执行create
+数据库回调
+development
+mongodb://127.0.0.1:27017/ballsir
+******mongoURL******
+mongodb://127.0.0.1:27017/ballsir
+********************
+
+/Users/dongcai/Desktop/BallSirProject/BallSirApiSer/NodeForBallSir/routes/user.js:20
+    userAsk: function(req, res, next){
+    ^^^^^^^
+SyntaxError: Unexpected identifier
+    at Module._compile (module.js:439:25)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at module.exports (/Users/dongcai/Desktop/BallSirProject/BallSirApiSer/NodeForBallSir/configure/api.js:2:13)
+    at Object.<anonymous> (/Users/dongcai/Desktop/BallSirProject/BallSirApiSer/NodeForBallSir/ballsirsay.js:28:37)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+development
+mongodb://127.0.0.1:27017/ballsir
+******mongoURL******
+mongodb://127.0.0.1:27017/ballsir
+********************
+myapp listening at http://0.0.0.0:8080
+successfully connect mongodb
